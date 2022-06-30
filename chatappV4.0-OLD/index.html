@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <!--<div style="background-color:blue; width: 100%; height: 60px;">
+        <h1 style="padding-left: 25%; padding-right: 25%;">hi</h1>
+    </div>-->
+
+</header>
+<head>
+    <meta charset="UTF-8">
+    <title>bootcamp2022GANG</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mqtt/4.3.7/mqtt.min.js" type="text/javascript"></script>
+</head>
+<body>
+<!--<div class="status" style="float: top; background-color: #474746; float: top; width: 25%; height: 60px;">
+
+</div>-->
+
+<div class="chatapp" id="chatapp">
+    <div>
+        <div class="chat-bg">
+            <div class="status">
+            </div>
+            <h4 style="font-family: arial; text-align: center;">chats</h4>
+            <div class="codettesBootcamp2022">
+                <img class="bootcamp2022LOGO" src="bootcamplogo.jpg">
+                <h4 class="bootcamp2022name">Bootcamp2022</h4>
+            </div>
+            <div id="userlist"></div>
+        </div>
+    </div>
+    <aside>
+        <div class="chat-LOG">
+            <div class="person">
+                <h3 class="person-name">Bootcamp2022</h3>
+            </div>
+            <div class="text-inpt" style="width: 100%;">
+                <div id="chatlog" style="width: 100%; height: 650px; text-align: center;">
+                    <h6 style="margin: 0; padding-top: 10px;">this chat isn't safe, so chances of message leaks are
+                        high. be
+                        careful.</h6>
+                    <div id="name">
+
+                    </div>
+                </div>
+                <input class="inpt" type="text" id="chatInput" onkeydown="sendMsg(this)">
+                <button class="sendButton"
+                        onclick="sendMessageButton(getElementById('chatInput').value); getElementById('chatInput').value='';">
+                    <!--digital art-->
+                    <img class="send-img" src="sendmessage-orig.png"></button>
+            </div>
+        </div>
+    </aside>
+</div>
+
+<!--<script src="app.js" type="text/javascript"></script>-->
+<script src="appv3.js" type="text/javascript"></script>
+</body>
+
+
+<!---->
+
+
+<footer>
+    <!--<h2>mail me at kharipersad11.h@gmail.com the chance ill respond to ur mail is very low.</h2>-->
+</footer>
+</html>

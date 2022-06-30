@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id=redir>
+    <meta charset="UTF-8">
+    <title>Log into chatapp</title>
+    <link href="login.css" rel="stylesheet">
+    <script src="login.js"></script>
+</head>
+<body>
+<div class="n" id="content">
+    <div class="fill-in"><h1 class="hello">hello</h1></div>
+    <div class="header">
+        <div class="login-dialog">
+            <div class="spacing-toplog"><h5>hello, Stranger. This is the log in screen. Fill in the first textbox your
+                name,
+                or
+                who you want to be seen as. Type in the second textbox your admin ID. The admin ID is not mandatory.
+                Leave
+                it empty if you want to be in normal mode. If the admin ID is incorrect, you will get access as a normal
+                user, without admin controls.<br>~~~</h5>
+            </div>
+            <input class="logon-as" type="text" id="logon-as" placeholder="hop on as:" onkeydown="submit-logon"><br>
+            <div class="spacing-logmin"></div>
+            <input class="admin" type="text" id="admin" placeholder="admin ID:" onkeydown="verify-password">
+            <div class="fill-in-buttn"></div>
+            <button class="submitButton" onclick="getInput();"><h6 class="submitTEXT">Lets go!</h6></button>
+            <div class="spacing-bottom"><h6>having problems? found bugs? <br> contact email: kharipersad11.h@gmail.com
+                <br>
+                contact discord: its.keshav#4099</h6></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
