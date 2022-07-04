@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <!--<div style="background-color:blue; width: 100%; height: 60px;">
+        <h1 style="padding-left: 25%; padding-right: 25%;">hi</h1>
+    </div>-->
+
+</header>
+<head>
+    <meta charset="UTF-8">
+    <title>bootcamp2022GANG</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mqtt/4.3.7/mqtt.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="chatapp" id="chatapp">
+    <div class="chats">
+        <div class="you" id="you">
+            <input type="button" id="toggle" value="1"
+       onclick="ondisconnect();">
+        </div>
+        <div class="ulist" id="userlist">
+
+        </div>
+    </div>
+    <aside>
+        <div class="aside-chat">
+            <div class="current">
+                <h3>main groupchat</h3>
+            </div>
+            <div class="chatlog" id="chatlog"> <!-- style="overflow-y:scroll;"-->
+
+            </div>
+            <input class="inpt" type="text" id="chatInput" placeholder="Type something..." onkeydown="sendMsg(this)">
+            <button class="sendButton"
+                    onclick="sendMessageButton(getElementById('chatInput').value); getElementById('chatInput').value='';">
+                <!--digital art-->
+                <img class="send-img" src="sendmessage-orig.png"></button>
+        </div>
+    </aside>
+</div>
+
+<div class="n" id="content">
+    <div class="fill-in"><h1 class="hello">hello</h1></div>
+    <div class="header">
+        <div class="login-dialog">
+            <div class="spacing-toplog"><h5 class="toptxt">hello, Stranger. This is the log in screen. Fill in the first
+                textbox your
+                name,
+                or
+                who you want to be seen as. Type in the second textbox your admin ID. The admin ID is not mandatory.
+                Leave
+                it empty if you want to be in normal mode. If the admin ID is incorrect, you will get access as a normal
+                user, without admin controls.<br>~~~</h5>
+            </div>
+            <input class="logon-as" type="text" id="logon-as" placeholder="hop on as:" onkeydown="submit-logon"><br>
+            <div class="spacing-logmin"></div>
+            <input class="admin" type="text" id="admin" placeholder="admin ID:" onkeydown="verify-password">
+            <div class="fill-in-buttn"></div>
+            <button class="submitButton" onclick="getInput();"><h6 class="submitTEXT">Lets go!</h6></button>
+            <div class="spacing-bottom"><h6>having problems? found bugs? <br> contact email: kharipersad11.h@gmail.com
+                <br>
+                contact discord: its.keshav#4099</h6></div>
+        </div>
+    </div>
+</div>
+<!--
+<div class="debug-dialog" id="debug-dialog">
+    <h3>debug</h3><br>
+    <h4>ping & pong test</h4>
+</div>-->
+
+<!--<script src="app.js" type="text/javascript"></script>-->
+<script src="appv3.js" type="text/javascript"></script>
+</body>
+
+
+<!---->
+
+
+<footer>
+    <!--<h2>mail me at kharipersad11.h@gmail.com the chance ill respond to ur mail is very low.</h2>-->
+</footer>
+</html>
+
